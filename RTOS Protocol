@@ -142,13 +142,16 @@ Non external Client interaction. Inform us about different information (status).
 {"msg_id":261,"type":"TCP","param":"192.168.42.11","token":1}
 {"rval":0,"msg_id":261}
 
-#msg_id: 259/260 | Aspect Ratio
+#msg_id: 259 | Force vf_start (Need for HTTP server ready)
+{"msg_id":259,"param":"none_force","token":1}
+"msg_id":7,"type":"vf_start"}
+{"rval":0,"msg_id":259}
+
+#msg_id: 260 | Force vf_stop
 {"msg_id":260,"token":1}
 {"msg_id":7,"type":"vf_stop"}
 {"rval":0,"msg_id":260}
 
-{"msg_id":259,"param":"none_force","token":1}
-{"rval":0,"msg_id":259}
 
 #msg_id: 513/514/515 | Start Video Capture/Remaining time Available/Stop Video Capture
 {"msg_id":513,"token":1}
