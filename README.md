@@ -1,6 +1,6 @@
 # Xiaomi Mijia 4K
 
-#Xiaomi Yi camera General Info
+#Xiaomi Mijia 4K camera General Info
 
 ##General info
  - **OS:** Linux 3.10.71 / RTOS
