@@ -11,6 +11,7 @@
  - **WIFI/Bluetooth:** Ampak AP6212A1 (BCM43430, 802.11n 1T/1R+BT4.0)
 
 
+
 #Partition Layout
 
 ```shell
@@ -26,6 +27,44 @@ mtd8: 03c00000 00020000 "Linux Root FS"
 mtd9: 01e00000 00020000 "Linux Hibernation Image"
 ```
 The root filesystem is `rootfs`, which is stored in memory and therefore wiped on reboot. The Micro SD card is mounted at `/tmp/SD0/`.
+
+
+
+#WiFi AP
+ - **SSID:** MiCam_[last 7 digits of SN]
+ - **Default pass:** `1234567890`
+ - **Securtiy:** WPA2-Personal
+ - **Camera IP:** `192.168.42.1`
+ - **Live RTSP:** `rtsp://192.168.42.1/live`
+
+
+
+#Nmap scan:
+```shell
+Opened ports on 192.168.42.1
+PORT      STATE SERVICE         VERSION
+*23/tcp   open  telnet          telnetd
+53/tcp    open  domaind         nsmasq 2.72
+80/tcp    open  http            Cherokee/1.2.101b171028
+111/tcp   open  rpcbind         2-4 (RPC #100000)
+554/tcp   open  rtsp
+7877/udp  open  unknown
+7878/tcp  open  owms
+8787/tcp  open  msgsrvr
+9888/tcp  open  cyborg-systems
+12080/tcp open  unknown
+
+*closed by default
+```
+
+
+
+#Shell access
+Telnet Access is closed by default. A empty file must to be created in SD Card root, called: `telnet.txt`.
+
+Default User: root
+
+
 
 #Bootlog
 
@@ -297,33 +336,3 @@ The root filesystem is `rootfs`, which is stored in memory and therefore wiped o
 [   19.226314] wifi_platform_get_mac_addr
 ```
 
-#WiFi AP
- - **SSID:** MiCam_[last 7 digits of SN]
- - **Default pass:** `1234567890`
- - **Securtiy:** WPA2-Personal
- - **Camera IP:** `192.168.42.1`
-
-
-
-#Nmap scan:
-```json
-Opened ports on 192.168.42.1
-PORT      STATE SERVICE         VERSION
-*23/tcp   open  telnet          telnetd
-53/tcp    open  domaind         nsmasq 2.72
-80/tcp    open  http            Cherokee/1.2.101b171028
-111/tcp   open  rpcbind         2-4 (RPC #100000)
-554/tcp   open  rtsp
-7877/udp  open  unknown
-7878/tcp  open  owms
-8787/tcp  open  msgsrvr
-9888/tcp  open  cyborg-systems
-12080/tcp open  unknown
-
-*closed by default
-```
-
-#Shell access
-Telnet Access is closed by default. A empty file must to be created in SD Card root, called: `telnet.txt`.
-
-Default User: root
