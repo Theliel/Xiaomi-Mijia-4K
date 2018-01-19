@@ -184,3 +184,25 @@ Non external Client interaction. Inform us about different information (status).
 #msg_id: 1281 | Delete File
 {"msg_id":1281,"param":"\/tmp\/SD0\/DCIM\/100MEDIA\/IMG_20180117_045006_0003.JPG","token":1}
 {"rval":0,"msg_id":1281}
+
+#msg_id: 1282 | List Files
+{"msg_id":1282,"param":"/tmp/SD0/","token":1}
+{"rval":0,"msg_id":1282,"listing":[{"test.ash":"2018-01-19 04:18:35"}]}
+
+#msg_id: 1283 | Change Dir
+{"msg_id":1283,"param":"/tmp/SD0/","token":1}
+{"rval":0,"msg_id":1283,"pwd":"/tmp/SD0/"}
+
+#msg_id: 1284 | Current Dir
+{"msg_id":1284,"token":1}
+{"rval":0,"msg_id":1284,"pwd":"/tmp/SD0/"}
+
+#msg_id: 1285 | Retrieve File
+{"msg_id":1285,"param":"/tmp/SD0/commands/test.txt","offset":0,"fetch_size":0,"token":1}
+{"rval":0,"msg_id":1285,"rem_size":0,"size":0}
+
+#msg_id: 1286 | Send File
+{"msg_id":1286,"param":"file", "offset":0, "size":0, "md5sum":"d41d8cd98f00b204e9800998ecf8427e","token":1}
+{"rval":0,"msg_id":1286}
+
+Connection to port 8787 for file sending
