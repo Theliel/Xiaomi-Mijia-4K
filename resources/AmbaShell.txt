@@ -1,0 +1,148 @@
+#Ambarella Shell
+
+Our Camera use a "dual" system: Linux and a RTOS OS. Linux provide all communication stuff, resources and others, while RTOS control is used for Camera control, UI...
+
+We can interact with Linux Shell thank to Telnet, but at first time, we only "interact" with RTOS through RTOS protocol, being RTOS "invisible" to us.
+
+Our Linux System only can interact directly with RTOS with the simple commandline tool: SendToRTOS & RecvFromRTOS, but both tools are very limited, are only used like flags:
+
+SendToRTOS
+usage: SendToRTOS <event type> [further info]
+<event type>:
+   "boot_done": Linux boot done.
+   "net_ready" <type> <: network ready as specified type.
+       <type>:
+           0: AP mode.
+           1: STA mode.
+           2: P2P mode.
+   "net_off": network turned-off.
+   "photo": Capture photo with bluetooth shutter.
+   "record": Record with bluetooth shutter.
+
+RecvFromRTOS --help
+usage: RecvFromRTOS [-f]
+Paramters:
+         "-f": same as "en_fg", to run at fore-ground.
+         
+
+The only feasible option is using autoexec.ash scripts.
+
+In bootime, RTOS is able to execute all commands inside autoexec.ash file, in SD root. That commands, are not Linux commands, are Ambarella Shell commands, so is the only real/feasible option to execute some task, like custom scripts and some others tricks.
+
+Ambarella Shell Commands are very limmited in Mijia. Is impossible to list all of them, but this list are most important shell commands:
+(Note: ambash.sh is a custom tool, is not available in our system
+
+#ambash.sh "help"
+supported built-in commands:
+        help            echo            dmesg           sleep
+        readb           readl           readw           writeb
+        writel          writew          nftl            fsrandverify
+        fsthruput       ps              suspend         date
+        firmfl          cd              ls              format
+        reboot          hotboot         poweroff        cardmgr
+        ver             vol             true            mkdir
+        memtest         pwd             chmod           cat
+        rm              cleandir        mv              savebin
+        sd_shmoo        t
+        
+#ambash.sh "t"
+AmbaShell Test Command [Version 1.0.0000]
+(C) Copyright 2004-2014 Ambarella Corp.
+
+supported test commands:
+        help
+        drv
+        app
+        boss
+        ambalink
+        ipc
+
+#ambash.sh "t app"
+App test command list:
+         msg
+         key
+         jack
+         test
+         mem
+         adc
+         move_file  | old_file  | new_file
+        dvt
+        ptb_lan
+
+ #ambash.sh "t app test"
+Usage: t app test <option>
+Test option list:
+         chg_res
+         chg_LCD
+         chg_mode
+         chg_app
+         graph
+         rotate [0 |2]
+         freq
+         extenc [on | off | set_freq | sw]
+         texttrack [on | off | sw]
+         wakeup [alarm time(sec)]
+         bb
+         widget
+         enc
+         wdt
+         vf [on | off | sw]
+         rtsp
+         ps
+         idr
+         np
+         sharepv [init | en | dis]
+         usbdbg [start | 2uart | 2usb]
+         gsensor
+         language [english |chinese]
+         playbeep [index][times]
+         pref_lock [pref__cnt_set][auto_lock_cnt]
+         vbus [enable | disable]
+
+#ambash.sh "t app key"
+Usage: t app key <key>
+Key list:
+         up
+         up_rel
+         down
+         down_rel
+         left
+         left_rel
+         right
+         right_rel
+         zoomin
+         zoomin_rel
+         zoomout
+         zoomout_re l
+         set
+         focus
+         focus_rel
+         shutter
+         shutter_rel
+         record
+         mode
+         menu
+         power
+         del
+         imu [open | read |write | debug]
+         aud r add/ w addr data
+
+#mbash.sh "nftl"
+valid test targets for flash are:
+        rs
+        ws
+        verify
+        pr
+        pw
+        erase
+        erase_lba
+        thruput
+        init
+        deinit
+        status
+        rclm_bb
+        bbm
+        l2p
+        p2l
+        ulba
+        uupba
