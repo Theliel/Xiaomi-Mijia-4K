@@ -1,0 +1,61 @@
+#Bitrate & Resolutions Tables
+
+Note: Offsets in memory are different for each firmware version
+
+Ambarella use two tables (binary tables) for bitrate. The first one is a list of all bitrates (one for each resolution and for each quality), the second one is for resolutions, "linked" to the first table. Xiaomi Mijia have 3 Quality modes: S. Fine, Fine and Normal, so for each resolution, we have three differents bitrate. 
+
+All this stuff is stored in the same firmware. For us, is important because can be modded. Once system is booted, system is loaded in Memory at 0xA0000000 offset. So we can mod any value safely, above 0xA0000000 of course. Any script using these offsets, must to be fixed for others versions, below offsets ARE ONLY for 6.12.05
+
+
+#Bitrate Table
+
+The bitrate table is located in 0xA0560104 (In Memory). This table store four float (4Bytes) values in each "row" (3 row per resolution, because Quality): Type, Bitrate, MinRange, MaxRange.
+
+Type = BitRate type, 1 = CBR, 2 = ABR, 3 = VBR
+Bitrate = Bitrate (remember, are floats)
+MinRange/MaxRange = Min/Max Range around Bitrate
+
+
+For example, the first 96 Bytes = 6 Row (16 Bytes per row)
+
+  Type     Brat     mRan     Mran
+02000000 0000C842 0000403F 6666863F  |  Type:2 BitRate:100 MinRange:0,750 MaxRange:1,05 -> Firt Resolution, S.Fine Quality
+02000000 00007042 0000403F 6666863F  |  Type:2 BitRate:60 MinRange:0,750 MaxRange:1,05 -> Firt Resolution, Fine Quality
+02000000 00002042 0000403F 6666863F  |  Type:2 BitRate:40 MinRange:0,750 MaxRange:1,05 -> Firt Resolution, Normal Quality
+02000000 00007042 0000403F 6666863F  |  Type:2 BitRate:60 MinRange:0,750 MaxRange:1,05 -> Second Resolution, S.Fine Quality
+02000000 00002042 0000403F 6666863F  |  Type:2 BitRate:40 MinRange:0,750 MaxRange:1,05 -> Second Resolution, Fine Quality
+02000000 0000F041 0000403F 6666863F  |  Type:2 BitRate:30 MinRange:0,750 MaxRange:1,05 -> Second Resolution, Normal Quality
+
+
+#Resolutions Table
+
+The Resolution Table is located in 0xA056101C (In Memory). In this case, the table is only a list, storing values in 2Bytes ASCII representation. 
+
+For example, the first 124 Bytes = The first three resolutions:
+
+3300 3800 3400 3000 7800 3200 3100 3600 3000 2F00 3300 3000 | 3840x2160/30
+0000000000000000000000000000000000000000000000000000 (Padding Bytes)
+3300 3800 3400 3000 7800 3200 3100 3600 3000 2F00 3200 3500 | 3840x2160/25
+0000000000000000000000000000000000000000000000000000 (Padding Bytes)
+3300 3800 3400 3000 7800 3200 3100 3600 3000 2F00 3200 3400 | 3840x2160/24
+
+
+Bitrate Table and Resolution Table are linked. So the first 3 Bitrates are assigned to the first resolution, and son on:
+
+3840x2160/30 = 100Mb S.Fine, 60Mb Fine and 40Mb Normal.
+3840x2160/25 = 60Mb S.Fine, 40Mb Fine and 30Mb Normal.
+
+
+#Using these tables:
+
+Imagine you want force 3840x2160/25 to 100Mb, 40Mb and 30Mb. We can use writew/writel. We need write the new value (100) in the exact offset location:
+
+Offset for second resolution and SFine:
+0xA0560104 + 4 + 16*3 = 0xA0560138
+Value to Write: 100Mb = 0x0000C842
+
+writel 0xA0560138 0x42C80000
+or
+writew 0xA056013A 0x42C8
+
+Bytes are inverted because Endianness. You can choose write a Byte (writeb), Word (writew) or dword (wrotel). Since normally we are only need to mod 4 Bytes, we can use writew (and of course, a +2 offset) 
