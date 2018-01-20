@@ -98,6 +98,8 @@ Test option list:
          playbeep [index][times]
          pref_lock [pref__cnt_set][auto_lock_cnt]
          vbus [enable | disable]
+         usb [coonect] [disconnect]
+         usbmode [msc] [rs232]
 
 #ambash.sh "t app key"
 Usage: t app key <key>
