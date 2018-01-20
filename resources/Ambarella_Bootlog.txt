@@ -1,0 +1,762 @@
+[00000002][CA9] AmbaLL_Log auto init
+[00000002][CA9] AmbaLL_LogInit a0d115e8 1024 7ff 80003
+[00000002][CA9] AmbaLL_IntInit
+[00000002][CA9] AmpMW_Init: DSP WorkAddr a1880000 Size 284164096
+[00000002][CA9] Img Lib Version 5.50 Description:a12sdk_005
+[00000005][CA9] ===========================================
+[00000005][CA9]     CACHE : [0xb2780000 - 0xbcdfffff], 166 MB
+[00000005][CA9]       DSP : [0xa1880000 - 0xb277ffff], 271 MB
+[00000005][CA9] NON-CACHE : [0xa1800000 - 0xa187ffff],   0 MB
+[00000005][CA9]     LINUX : [0xbce00000 - 0xbfffffff],  50 MB
+[00000005][CA9] ===========================================
+[00000009][CA9] ROM (0): initialized
+[00000010][CA9] ROM (1): initialized
+[00000104][CA9] AmpFifo Task started
+[00000104][CA9] AmpFifoPrint_Init 1024 0xa1135418
+[00000104][CA9] [App - MainTask] <DcfInit> DCF init:
+[00000104][CA9]     InitCfg.CfsCfg.TaskInfo.Priority = 0x49
+[00000104][CA9]     InitCfg.CfsCfg.SchBankSize      = 0x80000
+[00000104][CA9]     InitCfg.CfsCfg.SchBankAmount = 0x10
+[00000104][CA9]     InitCfg.CfsCfg.SchTaskAmount = 0x1
+[00000104][CA9]     InitCfg.CfsCfg.CacheEnable = 0x1
+[00000104][CA9]     InitCfg.CfsCfg.CacheMaxFileNum = 0xfa5
+[00000104][CA9]     InitCfg.CfsCfg.BufferSize = 0x8b0500
+[00000104][CA9] ===================================
+[00000104][CA9]     InitCfg.DcfInitCfg.TaskInfo.Priority = 0xa0
+[00000104][CA9]     InitCfg.DcfInitCfg.DefTblCfg.MaxFile = 0x4e20
+[00000105][CA9]     InitCfg.DcfInitCfg.MaxRootPerHdlr = 0x1
+[00000105][CA9]     InitCfg.BufferSize = 0xa84190
+[00000105][CA9] ===================================
+[00000113][CA9] [App - MainTask] <DcfInit> DCF init ok!
+[00000114][CA9] ---------------------------------------------
+[00000114][CA9] BSP: EVK_Dragonfly
+[00000114][CA9] ---------------------------------------------
+[00000114][CA9] Cortex freq:         792000000
+[00000114][CA9] DDR freq:            600000000
+[00000114][CA9] IDSP freq:           264000000
+[00000114][CA9] Core freq:           396000000
+[00000114][CA9] AXI freq:            264000000
+[00000114][CA9] AHB freq:            198000000
+[00000114][CA9] APB freq:            99000000
+[00000114][CA9] ---------------------------------------------
+[00000114][CA9] ----- Version info --------------------------
+[00000114][CA9] [  local] : libapp.a
+[00000114][CA9] [  local] : libapplib.a
+[00000114][CA9] [   2644] : libaudio.a
+[00000114][CA9] [  local] : libaudio_sys.a
+[00000114][CA9] [  local] : libbsp.a
+[00000114][CA9] [  local] : libcomsvc_fwupdate.a
+[00000114][CA9] [  local] : libcomsvc_misc.a
+[00000114][CA9] [  local] : libcomsvc_shell.a
+[00000114][CA9] [  local] : libcomsvc_sys.a
+[00000114][CA9] [  local] : libcomsvc_test.a
+[00000114][CA9] [  local] : libcomsvc_tune.a
+[00000114][CA9] [  local] : libdsp_dspkernel.a
+[00000114][CA9] [M12b5b3f] : libdsp_imgkernel.a
+[00000114][CA9] [  local] : libfoss.a
+[00000114][CA9] [M74bf265] : libfs.a
+[00000114][CA9] [  local] : libimg_adj.a
+[00000114][CA9] [  local] : libimg_ae.a
+[00000114][CA9] [  local] : libimg_awb.a
+[00000114][CA9] [  local] : libimg_calib.a
+[00000114][CA9] [  local] : libimg_encmonitor.a
+[00000114][CA9] [  local] : libimg_ituner.a
+[00000114][CA9] [  local] : libimg_proc.a
+[00000114][CA9] [  local] : libimg_schdlr.a
+[00000114][CA9] [  local] : libimg_utils.a
+[00000114][CA9] [  local] : libkal.a
+[00000114][CA9] [  local] : liblink.a
+[00000114][CA9] [  local] : libmw_cfs.a
+[00000114][CA9] [  local] : libmw_dataflow.a
+[00000114][CA9] [  local] : libmw_dspflow.a
+[00000114][CA9] [  local] : libmw_net.a
+[00000114][CA9] [  local] : libperipheral.a
+[00000114][CA9] [  local] : libprfile.a
+[00000114][CA9] [  local] : libsoc.a
+[00000114][CA9] [  local] : libsoc_test.a
+[00000115][CA9] [  local] : libthreadx.a
+[00000115][CA9] [  local] : libusb.a
+[00000115][CA9] [  local] : libusb_cdcacm.a
+[00000115][CA9] [  local] : libusb_dfu.a
+[00000115][CA9] [  local] : libusb_driver.a
+[00000115][CA9] [  local] : libusb_hid.a
+[00000115][CA9] [  local] : libusb_hostclasses.a
+[00000115][CA9] [  local] : libusb_hostcontroller.a
+[00000115][CA9] [  local] : libusb_msc.a
+[00000115][CA9] [  local] : libusb_mtp.a
+[00000115][CA9] [  local] : libusb_pictbridge.a
+[00000115][CA9] [  local] : libusb_simple.a
+[00000115][CA9] [  local] : libusb_stream.a
+[00000115][CA9] [  local] : libusb_uvc.a
+[00000115][CA9] Built amba_app.elf by zhouyanhui@compile at Tue Nov 21 17:32:30 CST 2017
+[00000115][CA9] ---------------------------------------------
+[00000295][CA9] Load orccode.bin to 0xa1200000, size = 4274651
+[00000314][CA9] Load orcme.bin to 0xa1680000, size = 432320
+[00000325][CA9] Load default_binary.bin to 0xa1780000, size = 262144
+[00000330][CA9] [App - Pref] <_AppPref_Read>  AmbaNFTL_Read Start 0xA098D9F0   CurSectors 140 NullSectors=144
+[00000330][CA9] [App - Pref] <Save> Save preference
+[00000343][CA9] [App - Pref] <_AppPref_Write> AmbaNFTL_Write Start 0xA098D9F0  TotalSectors 512 TotalBlk 2 write Sectors 144
+[00000343][CA9] [App - Pref] <Save> success
+[00000343][CA9] === Write (512 Bytes) ===
+[00000345][CA9] [AppLib - Sensor] <Attach> Registered sensor imx317_a12
+[00000345][CA9] === AmbaImgProc Module, Revision :  4833 ===
+[00000345][CA9] get_ptb_data str:
+[00000345][CA9] get_ptb_data: 10
+[00000345][CA9] [Cal] Total 15 sites init done
+[00000345][CA9] Default: SecStart 0x0, SecNum 8, TotalSecNums 8
+[00000352][CA9] Default: SecStart 0x484, SecNum 4, TotalSecNums 4
+[00000353][CA9] [ImgSchdlr][Log] Init 0xB3B01680, 1024 72
+[00000353][CA9] SpecIdxNum 31
+[00000419][CA9] [App - VoutLCD] <RegisterLcd> LCD panel selected: st7793
+[00000419][CA9] [AppLib - LCD] <Attach> Registered LCD[0] st7793
+[00000419][CA9] AmbaUSB_System_SetDeviceDataConn(): USB PHY is off, turn it on.
+[00000425][CA9] AmbaUSB_System_SetDeviceDataConn(): Previous USB PHY is off, turn it off.
+[00000431][CA9] Get Nulti-Lang Flag = 208
+[00000431][CA9] [AmpBeep_Init][0203] Enter
+[00000431][CA9] [AmpBeep_Init][0217] Set default CoreSelection = 0x00000001
+[00000431][CA9] [AppLib - Audio] <ReadDataFromRom> Filename = di_12k.pcm
+[00000431][CA9] [AppLib - Audio] <ReadDataFromRom> FileSize = 984.
+[00000432][CA9] [AppLib - Audio] <ReadDataFromRom> ReturnValue = 984
+[00000432][CA9] >>>>>> AppLibAudio_InitPesAudio 386: 0xB3B8D840 0x3D8 <<<<<<
+[00000481][CA9] SCM_SLOT_SD inserted
+[00001103][CA9] AmbaSD_InitCard - SD_CARD OK
+[00001185][CA9] [AppUtil_AudioSetVolume]=2399, value = 0, index = 0, volume = 81
+[00001186][CA9] G_Vin.Vin = b3ba3400
+[00001186][CA9] Sensor OutputWin(3864 2218) RecPx(12 40 3840 2162)
+[00001186][CA9] [Applib - ExtendEnc] <_ExtendEnc_Init> Disable extend encode module.
+[00001199][CA9] ================rec_connected_cam_check_eis_support 780: eis=1 res=14 PreviousEisMode=0
+[00001199][CA9] ================rec_connected_cam_check_eis_support 800: eis=1 res=14 PreviousEisMode=2
+[00001199][CA9] [App - Sensor] <GetVinMode> Vin Mode = 1
+[00001199][CA9] [Applib - VideoEnc] <VinSwitchCallback> AMP_VIN_EVENT_INVALID info: 0
+[00001199][CA9] [AppLib - Image] <EnableImgSchdlr> VencImgSchdlr[0] is NULL!!
+[00001199][CA9] [01524][W][Disp][AmpDisplay_GetInfoImpl] Display handler 0XB3B1D26C is not started.
+[00001199][CA9] [01524][W][Disp][AmpDisplay_GetInfoImpl] Display handler 0XB3B1D160 is not started.
+[00001199][CA9] Sensor OutputWin(3864 2218) RecPx(12 40 3840 2160)
+[00001199][CA9] [Applib - ExtendEnc] <_ExtendEnc_GetEnableStatus> Enable flag: 0
+[00001199][CA9] [AppLibAudioEnc_CalBitsBufThreshold] Bits buffer threshold is 144000 MByte
+[00001199][CA9] [Applib - AudioEnc] <Setup> [Pri]Bits 0xB9D001E0 size 2097152 Desc 0xB9F00220 size 40960
+[00001199][CA9] AmpFifo_Create b2aea220 Base Base:       0 (0,0) NumEntries =     1280 Q = 0xB2B27F40, QSize = 40960
+[00001200][CA9] [App - Sensor] <GetVinMode> Vin Mode = 1
+[00001200][CA9] [AppLib - Image] <DeleteImgSchdlr> schdlr doesn't exist!!
+[00001200][CA9] [ImgSchdlr][ExpInfo] 0xb3afca20 enable
+[00001200][CA9] ImgSchdlrMsg Task started
+[00001200][CA9] [Applib - VideoEnc] <VinSwitchCallback> AMP_VIN_EVENT_INVALID info: 0
+[00001200][CA9] ImgSchdlr already disable 0
+[00001200][CA9] [01524][W][Disp][AmpDisplay_GetInfoImpl] Display handler 0XB3B1D26C is not started.
+[00001200][CA9] [01524][W][Disp][AmpDisplay_GetInfoImpl] Display handler 0XB3B1D160 is not started.
+[00001200][CA9] [DSP][DEBUG]DspVout_CmdSortEntry 292, AmbaDSP_VoutCmdTask created
+[00001265][CA9] [01524][W][Disp][AmpDisplay_GetInfoImpl] Display handler 0XB3B1D26C is not started.
+[00001265][CA9] [App - Connected] <ChangeDisplay> FChan Disable. Disable the fchan Window
+[00001265][CA9] [AppLib - Display] <calcPreviewWindowSize> preview_w=240,preview_h=400,vout_x=0,vout_y=0
+[00001265][CA9] [DSP][DEBUG]AmbaDSP_CalHybridIdspFreq 1255, Vin = VinOutWidth(4224) x SensorFrameHeight(2275) x Vinfps(30) / VinProcRate(2) x 1.05 = 151351200
+[00001265][CA9] [DSP][DEBUG]AmbaDSP_CalHybridIdspFreq 1326,   EIS rotate crop percentage = 12 %
+[00001265][CA9] [DSP][DEBUG]AmbaDSP_CalHybridIdspFreq 1327,   EIS offset correction percentage = 10 %
+[00001265][CA9] [DSP][DEBUG]AmbaDSP_CalHybridIdspFreq 1379,   CFA_Width = Min(1.4 x MainEncWidth(1920), MAX_BACKEND(2720), VcapWidth(3840)) = 2688
+[00001265][CA9] [DSP][DEBUG]AmbaDSP_CalHybridIdspFreq 1381,   CFA_Height = Min(VcapHeight(2160), MainEncHeight(1080) x CFA_Width(2688) / MainEncWidth(1920)) = 1512
+[00001265][CA9] [DSP][DEBUG]AmbaDSP_CalHybridIdspFreq 1388,   StitchEnable = (StripeNumVin(2) > 1 || StripeNumMain(2) > 1) ? 1 : 0 = 1
+[00001265][CA9] [DSP][DEBUG]AmbaDSP_CalHybridIdspFreq 1390,   StripeNum = Max(StripeNumVin(2), StripeNumMain(2)) = 2
+[00001265][CA9] [DSP][DEBUG]AmbaDSP_CalHybridIdspFreq 1395, FrontEndMain = (VCapWidth(3840) + StitchEnable(1) x (StripeNum(2)-1) x StitichPadding(207) x 2) x VcapHeight(2160) x Vinfps(30) / Sec2ProcRate(2) x ((CfaPrescaleEnable(1))? 1.3: 1) = 179178480
+[00001265][CA9] [DSP][DEBUG]AmbaDSP_CalHybridIdspFreq 1420, BackEndR2Y = (CFA_Width(2688) + StitchEnable(1) x (StripeNum(2)-1) x StitichPadding(207) x 2) x CFA_Height(1512) x Vinfps(30) = 140706720
+[00001265][CA9] [DSP][DEBUG]AmbaDSP_CalHybridIdspFreq 1422, BackEndVWarp = (MainEncWidth(1920) + StitchEnable(1) x (StripeNum(2)-1) x StitichPadding(207) x 2) x MainEncHeight(1080) x MainEncFrameRate(30) = 75621600
+[00001265][CA9] [DSP][DEBUG]AmbaDSP_CalHybridIdspFreq 1434, BackEndMain = Max(BackEndR2Y(140706720),BackEndVWarp(75621600)) = 140706720
+[00001265][CA9] [DSP][DEBUG]AmbaDSP_CalHybridIdspFreq 1489, BackEndMainPreview = Max(MainEncWidth,PreviewWidth)(1920) x Max(MainEncHeight,PreviewHeight)(1080) x Vinfps(30) x 1.1 = 62208000
+[00001265][CA9] [DSP][DEBUG]AmbaDSP_CalHybridIdspFreq 1495, MaxFrontEnd2BackEnd = Max(FrontEndMain, BackEndMain, BackEndMainPreview) x 1000/EncFrameRate(30)/(1000/EncFrameRate(30) - HYBRID_SW_OVERHEAD(4.20)) x 1.05 = 215260187
+[00001265][CA9] [DSP][DEBUG]AmbaDSP_CalHybridIdspFreq 1535, IdspFreq = Max(Vin, MaxFrontEnd2BackEnd) = 215260187
+[00001265][CA9] [DSP][DEBUG]AmbaDSP_CalIdspFreq 1574, [Vin 0] IDSP Frequency: 215260187
+[00001327][CA9] [DSP][DEBUG]AmbaDSP_LiveviewConfig 756, Warp Pipe 0x2A
+[00001327][CA9] [DSP][WARNING]AmbaDSP_WarpCore_Init 314, Img Warp Core has been inited.
+[00001327][CA9] Sensor Input: 12 42 3840 2160 1 1 1 1
+[00001327][CA9] 1920 1080
+[00001327][CA9] 0 0 10000 10000
+[00001327][CA9] AmbaImgEisCtrl_SetFocalLength: EisFocalLength = 321, FocalValue = 821
+[00001327][CA9] eis init...
+[00001327][CA9] set EIS processing mode: 5
+[00001327][CA9] ====AmbaImgEisCtrl_Init starts====
+[00001327][CA9] LevelShift = 32768
+[00001327][CA9] MaxBias=65536
+[00001327][CA9] FocalValue=821
+[00001327][CA9] EisMv.MaxAngX=1117
+[00001327][CA9] EisMv.MaxAngY=1117
+[00001327][CA9] ====AmbaImgEisCtrl_Init finish====
+[00001327][CA9] ====AmbaImgEisCtrl_ModeInit starts====
+[00001327][CA9] SensorStartX = 12, SensorStartY =42, SensorWidth = 3840, SensorHeight = 2160
+[00001327][CA9] FrameRatePerSec=30
+[00001327][CA9] CurrFrameTime=34
+[00001327][CA9] EIS3.0---------FrameRatePerSec=30
+[00001327][CA9] SamplingScale = 1, SamplingRatio = 257
+[00001327][CA9] DownsampleX = 1, DownsampleY = 1
+[00001327][CA9] EisSensorStatus.ModeInfo.FrameLengthLines=2275
+[00001327][CA9] EisSensorStatus.ModeInfo.OutputInfo.OutputHeight=2218
+[00001327][CA9] EisSensorStatus.ModeInfo.InputInfo.PhotodiodeArray.Height=2160
+[00001327][CA9] EisSensorStatus.ModeInfo.RowTime*1000000000 + 0.5=14667
+[00001327][CA9] VerticalBlankTime=2
+[00001327][CA9] ====MemAllocate======
+[00001327][CA9] ====AmbaImageMainEis_GyroLogInit start====
+[00001327][CA9] ====AmbaImageMainEis_GyroLogInit finish====
+[00001328][CA9] ---------AmbaImageMainEis_GyroParamInit starts-------
+[00001328][CA9] GyroParam.OffsetX=8388608
+[00001328][CA9] GyroParam.OffsetY=8388608
+[00001328][CA9] GyroCalibInfo.SenseX=33536
+[00001328][CA9] GyroCalibInfo.SenseY=33536
+[00001328][CA9] ---------AmbaImageMainEis_GyroParamInit finishes-------
+[00001328][CA9] ---------AmbaImageMainEis_ParamInit starts-------
+[00001328][CA9] DefEisParam.SensorCellSizeX=41472
+[00001328][CA9] GyroInfo.VolDivDen=1
+[00001328][CA9] DefEisParam.EisScaleFactorDenX=7464960
+[00001328][CA9] DefEisParam.SensorCellSizeY=41472
+[00001328][CA9] DefEisParam.EisScaleFactorDenY=7464960
+[00001328][CA9] GyroCalibInfo.SenseX=33536
+[00001328][CA9] EisParam.EisScaleFactorDenX=9779097
+[00001328][CA9] GyroCalibInfo.SenseY=33536
+[00001328][CA9] EisParam.EisScaleFactorDenY=9779097
+[00001328][CA9] GyroCalibInfo.SenseZ=33536
+[00001328][CA9] EisParam.EisScaleFactorDenZ=1741512704, EisParam.EisScaleFactorNum=804
+[00001328][CA9] ---------AmbaImageMainEis_ParamInit finishes-------
+[00001328][CA9] EisMv.MaxAngX=1117
+[00001328][CA9] EisMv.MaxPixX=75313
+[00001328][CA9] EisMv.MaxAngY=1117
+[00001328][CA9] EisMv.MaxPixY=75313
+[00001328][CA9] pCalcWinInfo.VinSensorGeo.StartY=42
+[00001328][CA9] EisSensorStatus.ModeInfo.InputInfo.PhotodiodeArray.StartY=42
+[00001328][CA9] EisSensorStatus.ModeInfo.FrameLengthLines=2275
+[00001328][CA9] EisSensorStatus.ModeInfo.OutputInfo.RecordingPixels.Height=2160
+[00001328][CA9] EisSensorStatus.ModeInfo.OutputInfo.OutputHeight=2218
+[00001328][CA9] VinSensorGeo: Width=3840, Height=2160, StartX=12, StartY=42
+[00001328][CA9] CapStartY=0
+[00001328][CA9] DlyMs=0
+[00001328][CA9] AudioClkPerSecond=12288000
+[00001328][CA9] ====AmbaImgEisCtrl_ModeInit finish====
+[00001328][CA9] ====AmbaImgEisCtrl_Enable starts====
+[00001328][CA9] FlgEisDzEffect=1
+[00001328][CA9] ========AmbaImageMainEis_SetRange(1)=======
+[00001328][CA9] ============AmbaImageMainEis_CalCurrRange start===============
+[00001328][CA9] =============AmbaImageMainEis_CalcRotateFactor start===========
+[00001328][CA9] CapW=3840
+[00001328][CA9] CapH=2160
+[00001328][CA9]              calc 10: 3840 2160 3457 1945 0 a0000
+[00001328][CA9]              calc 11: 3840 2160 3418 1923 10 a0000
+[00001328][CA9]              calc 12: 3840 2160 3380 1901 21 a0000
+[00001328][CA9]              calc 13: 3840 2160 3341 1880 32 a0000
+[00001328][CA9]              calc 14: 3840 2160 3303 1858 43 a0000
+[00001328][CA9]              calc 15: 3840 2160 3265 1837 54 a0000
+[00001328][CA9]              calc 16: 3840 2160 3226 1815 64 a0000
+[00001328][CA9]              calc 17: 3840 2160 3188 1793 75 a0000
+[00001328][CA9]              calc 18: 3840 2160 3149 1772 86 a0000
+[00001328][CA9]              calc 19: 3840 2160 3111 1750 97 a0000
+[00001328][CA9]              calc 20: 3840 2160 3073 1729 108 a0000
+[00001328][CA9]              calc 21: 3840 2160 3034 1707 118 a0000
+[00001328][CA9]              calc 22: 3840 2160 2996 1685 129 a0000
+[00001328][CA9] =============AmbaImageMainEis_CalcRotateFactor end============
+[00001328][CA9] EisRotateFactor=12
+[00001328][CA9] EisStatus.EisDzoomFactor=84020
+[00001328][CA9] Zoom Ratio: 1.28 x
+[00001328][CA9] EisZoomRatio: 1.28 x
+[00001328][CA9] ============AmbaImageMainEis_CalCurrRange end===============
+[00001328][CA9] CapH=2160
+[00001328][CA9] ActH=1684, FrameLengthLines=2275
+[00001328][CA9] ========AmbaImageMainEis_SetDummy=======
+[00001328][CA9] CurrEisRangePerct  = 655360
+[00001328][CA9] RscY = 42
+[00001328][CA9] TmpDmyRange.Left  = 7208
+[00001328][CA9] TmpDmyRange.Right  = 7208
+[00001328][CA9] TmpDmyRange.Top = 7208
+[00001328][CA9] TmpDmyRange.Bottom = 7208
+[00001328][CA9] ============== AmbaImageMainEis_SetDummy: Before===============
+[00001329][CA9] WindowInfo.ActWinCrop.LeftTopX  = 0
+[00001329][CA9] WindowInfo.ActWinCrop.LeftTopY  = 0
+[00001329][CA9] WindowInfo.ActWinCrop.RightBotX = 3840
+[00001329][CA9] WindowInfo.ActWinCrop.RightBotY = 2160
+[00001329][CA9] WindowInfo.DmyWinGeo.StartX  = 0
+[00001329][CA9] WindowInfo.DmyWinGeo.StartY  = 0
+[00001329][CA9] WindowInfo.DmyWinGeo.Width   = 3840
+[00001329][CA9] WindowInfo.DmyWinGeo.Height  = 2160
+[00001329][CA9] WindowInfo.MainWinDim.Height  = 1080
+[00001329][CA9] DspZFY = 0x8000
+[00001329][CA9] AmbaDSP_WarpCore_SetWarpReferenceDummyWinMarginPixels = 1 @2213
+[00001329][CA9] HGN = 31, VGN = 18, TileWidth = 128, TileHeight = 128
+[00001329][CA9] [EIS] initialize calibration warp: 20130101 a0f11f50 12 42 3840 2160 1 1 1 1 7 7 31 18
+[00001329][CA9] ============== AmbaImageMainEis_SetDummy: After===============
+[00001329][CA9] WindowInfo.ActWinCrop.LeftTopX  = 419
+[00001329][CA9] WindowInfo.ActWinCrop.LeftTopY  = 236
+[00001329][CA9] WindowInfo.ActWinCrop.RightBotX = 3420
+[00001329][CA9] WindowInfo.ActWinCrop.RightBotY = 1923
+[00001329][CA9] WindowInfo.DmyWinGeo.StartX  = 0
+[00001329][CA9] WindowInfo.DmyWinGeo.StartY  = 0
+[00001329][CA9] WindowInfo.DmyWinGeo.Width   = 3840
+[00001330][CA9] WindowInfo.DmyWinGeo.Height  = 2160
+[00001330][CA9] WindowInfo.MainWinDim.Height  = 1080
+[00001330][CA9] DspZFY = 0xa3d6
+[00001330][CA9] ADV time: 3 4
+[00001330][CA9] EisUpdateEndTime1=3
+[00001330][CA9] EisUpdateEndTime2=34
+[00001330][CA9] EisWarpUpdateEndTime1=4
+[00001330][CA9] Sec2ProcLinesPerSample=0
+[00001330][CA9] [DSP][DEBUG]AmbaDSP_LiveviewEisConfig 1700, Eis Mode0 turn On
+[00001330][CA9] EisEnableDlyCnt=6
+[00001330][CA9] EisObj.EnablePref=0
+[00001330][CA9] EisObj.RscEnablePref=0
+[00001330][CA9] ====AmbaImgEisCtrl_Enable finish====
+[00001330][CA9] eis timer (1) = (1000, 1000)
+[00001330][CA9] [AppLib - IQParamHandler] <_Load_IqParam> load IQ Params img_default_Imx317 from ROMFS: 2672
+[00001331][CA9] [AppLib - IQParamHandler] <_Load_IqParam> load IQ Params aaa_default_00_Imx317 from ROMFS: 17296
+[00001332][CA9] [AppLib - IQParamHandler] <_Load_IqParam> load IQ Params aaa_default_01_Imx317 from ROMFS error :-1
+[00001334][CA9] execute script: c:\autoexec.ash ...
+[00001334][CA9] [AppLib - IQParamHandler] <_Load_IqParam> load IQ Params adj_still_default_00_Imx317 from ROMFS: 49440
+[00001337][CA9] [AppLib - IQParamHandler] <_Load_IqParam> load IQ Params adj_still_default_01_Imx317 from ROMFS: 49440
+[00001343][CA9] [AppLib - IQParamHandler] <_Load_IqParam> load IQ Params adj_hiso_still_default_00_Imx317 from ROMFS: 118196
+[00001346][CA9] [AppLib - IQParamHandler] <_Load_IqParam> load IQ Params adj_video_default_00_Imx317 from ROMFS: 49380
+[00001349][CA9] [AppLib - IQParamHandler] <_Load_IqParam> load IQ Params adj_video_default_01_Imx317 from ROMFS: 49380
+[00001352][CA9] [AppLib - IQParamHandler] <_Load_IqParam> load IQ Params adj_video_default_02_Imx317 from ROMFS: 49380
+[00001354][CA9] [AppLib - IQParamHandler] <_Load_IqParam> load IQ Params adj_video_default_03_Imx317 from ROMFS: 49380
+[00001357][CA9] [AppLib - IQParamHandler] <_Load_IqParam> load IQ Params adj_video_default_04_Imx317 from ROMFS: 49380
+[00001360][CA9] [AppLib - IQParamHandler] <_Load_IqParam> load IQ Params adj_video_default_05_Imx317 from ROMFS: 49380
+[00001363][CA9] [AppLib - IQParamHandler] <_Load_IqParam> load IQ Params adj_video_default_06_Imx317 from ROMFS: 49380
+[00001365][CA9] [AppLib - IQParamHandler] <_Load_IqParam> load IQ Params adj_video_default_07_Imx317 from ROMFS: 49380
+[00001368][CA9] [AppLib - IQParamHandler] <_Load_IqParam> load IQ Params adj_video_default_08_Imx317 from ROMFS: 49380
+[00001371][CA9] [AppLib - IQParamHandler] <_Load_IqParam> load IQ Params adj_video_default_09_Imx317 from ROMFS: 49380
+[00001373][CA9] [AppLib - IQParamHandler] <_Load_IqParam> load IQ Params adj_video_default_10_Imx317 from ROMFS: 49380
+[00001376][CA9] [AppLib - IQParamHandler] <_Load_IqParam> load IQ Params adj_video_default_11_Imx317 from ROMFS: 49380
+[00001379][CA9] [AppLib - IQParamHandler] <_Load_IqParam> load IQ Params adj_photo_default_00_Imx317 from ROMFS: 50780
+[00001382][CA9] [AppLib - IQParamHandler] <_Load_IqParam> load IQ Params adj_photo_default_01_Imx317 from ROMFS: 50780
+[00001382][CA9] [AppLib - IQParamHandler] <_Load_IqParam> load IQ Params adj_still_idx_Imx317 from ROMFS: 32
+[00001382][CA9] [AppLib - IQParamHandler] <_Load_IqParam> load IQ Params adj_video_idx_Imx317 from ROMFS: 32
+[00001386][CA9] [AppLib - IQParamHandler] <_Load_IqParam> load IQ Params scene_data_s01_Imx317 from ROMFS: 66336
+[00001389][CA9] [AppLib - IQParamHandler] <_Load_IqParam> load IQ Params scene_data_s02_Imx317 from ROMFS: 66336
+[00001393][CA9] [AppLib - IQParamHandler] <_Load_IqParam> load IQ Params scene_data_s03_Imx317 from ROMFS: 66336
+[00001396][CA9] [AppLib - IQParamHandler] <_Load_IqParam> load IQ Params scene_data_s04_Imx317 from ROMFS: 66336
+[00001400][CA9] [AppLib - IQParamHandler] <_Load_IqParam> load IQ Params scene_data_s05_Imx317 from ROMFS: 66336
+[00001401][CA9] [AppLib - IQParamHandler] <_Load_IqParam> load IQ Params de_default_video_Imx317 from ROMFS: 23780
+[00001403][CA9] [AppLib - IQParamHandler] <_Load_IqParam> load IQ Params de_default_video_Imx317 from ROMFS: 23780
+[00001403][CA9] [AppLib - IQParamHandler] <_Load_IqParam> load IQ Params adj_table_param_default_Imx317 from ROMFS: 536
+[00001404][CA9] [AppLib - IQParamHandler] <_Load_CcRegTable> load Cc Reg A12_CC_Reg.bin from ROMFS: 18752
+[00001405][CA9] [AppLib - IQParamHandler] <_Load_VideoColorTable> load video cc 3D VideoCc0 from ROMFS: 17536
+[00001406][CA9] [AppLib - IQParamHandler] <_Load_VideoColorTable> load video cc 3D VideoCc1 from ROMFS: 17536
+[00001407][CA9] [AppLib - IQParamHandler] <_Load_VideoColorTable> load video cc 3D VideoCc2 from ROMFS: 17536
+[00001408][CA9] [AppLib - IQParamHandler] <_Load_VideoColorTable> load video cc 3D VideoCc3 from ROMFS: 17536
+[00001409][CA9] [AppLib - IQParamHandler] <_Load_VideoColorTable> load video cc 3D VideoCc4 from ROMFS: 17536
+[00001410][CA9] [AppLib - IQParamHandler] <_Load_StillColorTable> load still cc 3D StillCc0 from ROMFS: 17536
+[00001411][CA9] [AppLib - IQParamHandler] <_Load_StillColorTable> load still cc 3D StillCc1 from ROMFS: 17536
+[00001412][CA9] [AppLib - IQParamHandler] <_Load_StillColorTable> load still cc 3D StillCc2 from ROMFS: 17536
+[00001414][CA9] [AppLib - IQParamHandler] <_Load_StillColorTable> load still cc 3D StillCc3 from ROMFS: 17536
+[00001415][CA9] [AppLib - IQParamHandler] <_Load_StillColorTable> load still cc 3D StillCc4 from ROMFS: 17536
+[00001415][CA9] -------- ImgParam   : VersionNumber, Struct : 14111100 --------
+[00001415][CA9] -------- AaaParam   : VersionNumber, Struct : 14100700, Param : 17032300 --------
+[00001415][CA9] -------- VIDEO      : VersionNumber, Struct : 16021600, Param : 16111000 --------
+[00001415][CA9] -------- Photo      : VersionNumber, Struct : 16021600, Param : 17040700 --------
+[00001415][CA9] -------- Still LISO : VersionNumber, Struct : 14111100, Param : 16111000 --------
+[00001415][CA9] -------- Still HISO : VersionNumber, Struct : 15032500, Param : 16032201 --------
+[00001415][CA9] -------- StillParam : VersionNumber, Struct : 14051500, Param : 16111000 --------
+[00001416][CA9] === Amba Ae Lib., Revision :  3295 ===
+[00001416][CA9] === Ae_Control_Init,  0 ===
+[00001416][CA9] ae algorithm initial, FrameRate :  30, FrameRatex1000 : 29970
+[00001416][CA9] <Ae_Control_Init_Full>, scene mode : 0
+[00001417][CA9]
+
+----- MainShutterIdx =  1012, EvLutNum =     3, -----
+[00001417][CA9] ----- MinAgcInfo : 0 -----
+[00001417][CA9] ----- max_agc_db : 9,9,9,30,30,30,30 -----
+[00001417][CA9] ----- max_dgain_db : 0,0,0,3,3,3,3 -----
+[00001418][CA9] ----- max_vagc_db : 1856,1856,1856,1344,1344,1344,1344 -----
+[00001418][CA9] ----- AE_APERTURE_NO !! -----
+
+
+[00001418][CA9]
+ aaa version number
+[00001418][CA9] -------- aaa version_number, struct : 14100700, param : 17032300 --------
+
+[00001419][CA9] === Ae_Control_Init,  0 ===
+[00001419][CA9] ae algorithm initial, FrameRate :  30, FrameRatex1000 : 29970
+[00001419][CA9] <Ae_Control_Init_Full>, scene mode : 0
+[00001419][CA9]
+
+----- MainShutterIdx =  1012, EvLutNum =     3, -----
+[00001420][CA9] === Amba Awb Lib., Revision :  3288 ===
+[00001420][CA9] <_awb_control_2_init_full>,1 i = 0
+[00001420][CA9] <_awb_control_2_init_full>, 1
+[00001420][CA9] <_awb_control_2_init_full>,2 awb_curr_info.vin_total = 1, chNoCount : 1
+[00001420][CA9] <_awb_control_2_init_full>,2 i = 0
+[00001421][CA9] === Amba Adj Lib., Revision :  2993 ===
+[00001421][CA9] <AdjFunc_MemMgr_Init> 0, RVal = 0x0, size : 992
+[00001421][CA9] <AdjFunc_Param_Init> channelCount = 1
+[00001421][CA9] <AdjFunc_A12_MemMgr_Init> 0, RVal = 0x0, size : 12060
+[00001421][CA9] <Amba_Adj_Hdr_A12_MemMgr_Init> 0, RVal = 0x0, size : 4280
+[00001421][CA9] <AdjFunc_A9_Param_Init> channelCount = 1
+[00001421][CA9] <Amba_Adj_Video_Init>
+[00001421][CA9] <Iqt_MemMgr_Init> 0, RVal = 0x0, size : 10212
+[00001421][CA9] <Iqt_Param_Init> channelCount = 1
+[00001425][CA9] ImgSchdlr FlowCtrlTask 0 started
+[00001425][CA9] ImgSchdlr enable 0 0
+[00001425][CA9] [VIG CTL] no vignette data
+[00001428][CA9] <_awb_control_2_init_full>, 1
+[00001429][CA9] <_awb_control_2_init_full>,2 awb_curr_info.vin_total = 1, chNoCount : 1
+[00001429][CA9] <_awb_control_2_init_full>,2 i = 0
+[00001429][CA9] Real Table[31]:
+[00001429][CA9]   0.120000
+[00001429][CA9]   0.240000
+[00001429][CA9]   0.360000
+[00001429][CA9]   0.480000
+[00001429][CA9]   0.600000
+[00001429][CA9]   0.720000
+[00001429][CA9]   0.840000
+[00001429][CA9]   0.960000
+[00001429][CA9]   1.080000
+[00001429][CA9]   1.200000
+[00001429][CA9]   1.320000
+[00001429][CA9]   1.440000
+[00001429][CA9]   1.560000
+[00001429][CA9]   1.680000
+[00001429][CA9]   1.800000
+[00001429][CA9]   1.920000
+[00001429][CA9]   2.040000
+[00001429][CA9]   2.160000
+[00001429][CA9]   2.280000
+[00001429][CA9]   2.400000
+[00001429][CA9]   2.520000
+[00001429][CA9]   2.640000
+[00001429][CA9]   2.760000
+[00001429][CA9]   2.880000
+[00001429][CA9]   3.000000
+[00001429][CA9]   3.120000
+[00001429][CA9]   3.240000
+[00001429][CA9]   3.360000
+[00001429][CA9]   3.480000
+[00001429][CA9]   3.600000
+[00001429][CA9] Expect Table[31]:
+[00001429][CA9]   0.119712
+[00001429][CA9]   0.239852
+[00001429][CA9]   0.360842
+[00001429][CA9]   0.483159
+[00001429][CA9]   0.607100
+[00001429][CA9]   0.732940
+[00001429][CA9]   0.861258
+[00001429][CA9]   0.992529
+[00001429][CA9]   1.127297
+[00001429][CA9]   1.266148
+[00001429][CA9]   1.409556
+[00001429][CA9]   1.558571
+[00001429][CA9]   1.713720
+[00001429][CA9]   1.876208
+[00001429][CA9]   2.046641
+[00001429][CA9]   2.227512
+[00001429][CA9]   2.419239
+[00001430][CA9]   2.624931
+[00001430][CA9]   2.845988
+[00001430][CA9]   3.086924
+[00001430][CA9]   3.349352
+[00001430][CA9]   3.640304
+[00001430][CA9]   3.963819
+[00001430][CA9]   4.330448
+[00001430][CA9]   4.749565
+[00001430][CA9]   5.235716
+[00001430][CA9]   5.812072
+[00001430][CA9]   6.514006
+[00001430][CA9]   7.396336
+[00001430][CA9]   8.538778
+[00001430][CA9] Sensor ImgWidth: 3840  ImgHeight: 2160  RealWidth: 6.260000
+[00001430][CA9]        Center x: 1920  Center y: 1080
+[00001430][CA9] [Eisinfo] Init success
+[00001430][CA9] AmpVin Task for b3ba3400 started 0
+[00001430][CA9] AmbaLL_LogInit Inited
+[00001430][CA9] [DSP][DEBUG]AmbaDSP_LiveviewCtrl 1529, PreProc WrMode 1, OpMode 3, EncMode 11
+[00001430][CA9] [DSP][DEBUG]AmbaHL_LiveviewFillPreProcGroupCmds 350, Warp Pipe 0x2A
+[00001430][CA9] [DSP][DEBUG]AmbaHL_FillVideoPreProcEx 4361, PipeLine = 1001
+[00001430][CA9] [IK]Error, context id 1 > context number 1 - 1
+[00001430][CA9] Warning. Cannot get context mutex
+[00001430][CA9] [DSP][DEBUG]AmbaHL_FillVideoPreProcEx 4449, OutputWin[0] (1920 1080) (0 0) (1280 720) (400 240)
+[00001432][CA9] [DSP][DEBUG]AmbaHL_FillVideoPreProcEx 4465, PostExe @ CtxId 0 CfgId 0
+[00001433][CA9] [DSP][DEBUG]AmbaHL_FillVideoPreProcEx 4477, FullCopy @ CfgId 1
+[00001433][CA9] [DSP][DEBUG]AmbaHL_VoutResetSetup 2975, AmbaHL_VoutResetSetup 0
+[00001433][CA9] LL_W bch AmbaLL_BatchCmdBufferVideoAutoProcessEnable 0
+[00001433][CA9] pWorkArea        : 0xA1880000  size:284164096
+[00001433][CA9] pDebugLogDataArea: 0xA1800040  size:131072
+[00001433][CA9] Seamless disabled!
+[00001433][CA9] AmbaLL_LogInit Inited
+[00001433][CA9] DSP_MsgDispatchTaskEntry Created
+[00001434][CA9] AmbaDSP_ArmCommTask Created
+[00001434][CA9] AmbaDSP_ArmCommPrepareTask Created
+[00001434][CA9] AmbaDSP_IntTask Created
+[00001451][CA9] BiasAdjustBitShift changes from 0 to 5
+[00001489][CA9] == AMP_VIN_EVENT_VALID ==
+[00001490][CA9] [Applib - VideoEnc] <VinSwitchCallback> AMP_VIN_EVENT_VALID info: B3BA5554
+[00001491][CA9] LL_W bch AmbaLL_BatchCmdBufferVideoAutoProcessEnable 0
+[00001491][CA9] ===============================
+[00001491][CA9] version          = 262145
+[00001491][CA9] date             = 2016/9/7
+[00001491][CA9] api              = 261664
+[00001491][CA9] silicon          = 2750
+[00001491][CA9] init_data        = 0x51f9e0
+[00001491][CA9] ===============================
+[00001615][CA9] [Applib - VideoEnc] <PipeCallback> Pipe[A11438CC] AMP_ENC_EVENT_STATE_CHANGED newState 1
+[00001615][CA9] [AppLib - VideoAnal] <FrmHdlr_Init> VA init......
+[00001615][CA9] [AppLib - VideoAnal] <FrmHdlr_Init> Create Queue success
+[00001615][CA9] [AppLib - VideoAnal] <FrmHdlr_Init> Create Mutex success
+[00001615][CA9] [AppLib - VideoAnal] <FrmHdlr_Init> TaskPriority 136 , TaskStackSize 32768
+[00001615][CA9] [AppLib - VideoAnal] <FrmHdlr_Init> Create Task success
+[00001615][CA9] [AppLib - VideoAnal] <FrmHdlr_Init> VA init done
+[00001615][CA9] [AppLib - VideoAnal] <TriAHdlr_Init> VA 3A Handler init......
+[00001615][CA9] [AppLib - VideoAnal] <TriAHdlr_Init> Create Queue success
+[00001615][CA9] [AppLib - VideoAnal] <TriAHdlr_Init> Create Mutex success
+[00001615][CA9] [AppLib - VideoAnal] <TriAHdlr_Init> TaskPriority 135 , TaskStackSize 32768
+[00001615][CA9] [AppLib - VideoAnal] <TriAHdlr_Init> Create Task success
+[00001615][CA9] [AppLib - VideoAnal] <TriAHdlr_Init> VA 3A init done
+[00001615][CA9] app_mode_switch,874, mode=7
+[00001615][CA9] rec_connected_cam_set_enc_mode,3779
+[00001615][CA9] =========================<set white blance> = 0
+[00001615][CA9] =========================<set iso> = 0
+[00001615][CA9] =========================<set metering mode> = 0
+[00001615][CA9] =========================<set ev> = 6
+[00001615][CA9] >>>status_icon_inf_init 1097<<< i = 0 X:326 Y:5 Used:0
+[00001615][CA9] >>>status_icon_inf_init 1097<<< i = 1 X:300 Y:5 Used:0
+[00001615][CA9] >>>status_icon_inf_init 1097<<< i = 2 X:274 Y:5 Used:0
+[00001615][CA9] app_rec_connected_cam_start,998: app_rec_connected_cam.GFlags = 0x103
+[00001617][CA9] [Graphic][_ObjectImpl_CheckObject] pGuiTable NULL!
+[00001617][CA9] [SWScalar] Create Mutex success
+[00001757][CA9] ====AmbaImgEisCtrl_Enable starts====
+[00001757][CA9] EisEnableDlyCnt=0
+[00001757][CA9] ====AmbaImageMainEis_RangeUpdate starts====
+[00001757][CA9] -------- AmbaImageMainEis_RangeUpdate Start --------
+[00001757][CA9] SamplingScale = 1, SamplingRatio = 257, SensorDownsample = 65793
+[00001757][CA9] DownsampleX = 1, DownsampleY = 1
+[00001757][CA9] DownsampleX=1, FactorDen=1, FactorNum=1
+[00001757][CA9] DownsampleY=1, FactorDen=1, FactorNum=1
+[00001757][CA9] DownsampleXSft=0
+[00001757][CA9] DownsampleYSft=0
+[00001757][CA9] SensorStartX = 12, SensorStartY =42, SensorWidth = 3840, SensorHeight = 2160
+[00001757][CA9] Real Table[31]:
+[00001757][CA9] Expect Table[31]:
+[00001757][CA9] Generate RR Table: W=3840   H=2160   HGN=31   VGN=18
+[00001757][CA9] Generate RR Table: Complete
+[00001757][CA9] Generate B Table: W=3840   H=2160   HGN=31   VGN=18
+[00001757][CA9] Generate B Table: Complete
+[00001757][CA9] Generate BP Table: W=3840   H=2160   HGN=31   VGN=18   PixelSize=0.001630
+[00001757][CA9] Generate BP Table: Complete
+[00001757][CA9] Generate BPD Table: W=3840   H=2160   HGN=31   VGN=18   PixelSize=0.001630
+[00001758][CA9] Generate BPD Table: Complete
+[00001758][CA9] ============== AmbaImageMainEis_RangeUpdate: CalcWindowInfo===============
+[00001758][CA9] WindowInfo.ActWinCrop.LeftTopX  = 419
+[00001758][CA9] WindowInfo.ActWinCrop.LeftTopY  = 236
+[00001758][CA9] WindowInfo.ActWinCrop.RightBotX = 3420
+[00001758][CA9] WindowInfo.ActWinCrop.RightBotY = 1923
+[00001758][CA9] WindowInfo.DmyWinGeo.StartX  = 0
+[00001758][CA9] WindowInfo.DmyWinGeo.StartY  = 0
+[00001758][CA9] WindowInfo.DmyWinGeo.Width   = 3840
+[00001758][CA9] WindowInfo.DmyWinGeo.Height  = 2160
+[00001758][CA9] ============== AmbaImageMainEis_RangeUpdate: GetWindowInfo===============
+[00001758][CA9] pWindowInfo.ActWinCrop.LeftTopX  = 419
+[00001758][CA9] pWindowInfo.ActWinCrop.LeftTopY  = 236
+[00001758][CA9] pWindowInfo.ActWinCrop.RightBotX = 3420
+[00001758][CA9] pWindowInfo.ActWinCrop.RightBotY = 1923
+[00001758][CA9] pWindowInfo.DmyWinGeo.StartX  = 0
+[00001758][CA9] pWindowInfo.DmyWinGeo.StartY  = 0
+[00001758][CA9] pWindowInfo.DmyWinGeo.Width   = 3840
+[00001758][CA9] pWindowInfo.DmyWinGeo.Height  = 2160
+[00001758][CA9] pWindowInfo.MainWinDim.Height  = 1080
+[00001758][CA9] DspZFY = 0xa3d6
+[00001758][CA9] CapW=3840
+[00001758][CA9] CapH=2160
+[00001758][CA9] ActiveH=1688
+[00001758][CA9] SafeH=1030
+[00001758][CA9] Sec2ProcLinesPerSample=43
+[00001758][CA9] IsMovLim.MovX=190
+[00001758][CA9] IsMovLim.MovY=106
+[00001758][CA9] EisLimP.MovX= 28416
+[00001758][CA9] RscLimP.MovX= 20224
+[00001758][CA9] EisLimN.MovX= 28416
+[00001758][CA9] RscLimN.MovX= 20224
+[00001758][CA9] EisLimP.MovY= 15872
+[00001758][CA9] RscLimP.MovY= 11264
+[00001758][CA9] EisLimN.MovY= 15872
+[00001758][CA9] RscLimN.MovY= 11264
+[00001758][CA9] -------- AmbaImageMainEis_RangeUpdate End --------
+[00001758][CA9] ====AmbaImgEisCtrl_Enable finish====
+[00001758][CA9] EisObj.EnablePref=1
+[00001758][CA9] EisObj.RscEnablePref=1
+[00001758][CA9] EisObj.EnablePref=0
+[00001758][CA9] EisObj.RscEnablePref=0
+[00001759][CA9] BiasAdjustBitShift changes from 5 to 10
+[00001759][CA9] eis warmup is done
+[00001767][CA9] [App - Connected] <OnMessage> Received msg: 0x10010001, msg_id: 0x2,msg_type:0x0; (param1 = 0x0 / param2 = 0x0)
+[00001767][CA9] [App - Connected] <OnMessage> Received HMSG_RECORDER_STATE_LIVEVIEW
+[00002071][CA9] [TP_Detect_Task_Init] Create Task success
+[00002071][CA9] [ITUNER][DEBUG]Set ITUNER_FPN_MAP_SIZE 12582912
+[00002071][CA9] [AppLib - NetBase] <InitAmbaLink> AMBA_LINK enable
+[00002071][CA9] AmbaLink: SpinLock 0xbd214000, 0x00001000
+[00002071][CA9] AmbaLink: Mutex    0xbd215000
+[00002071][CA9] AmbaBoss_Start: Initialize BOSS
+[00002072][CA9] register AmbaLink_BootDoneCallBack
+[00002072][CA9] [App - ButtonOp] <MgrTask> Button manager ready
+[00002073][CA9] BossLoadTask: BOSS load task start.
+[00002084][CA9] [App - ButtonOp] <MgrTask> Received msg: 0x1 (Param1 = 0x4A / Param2 = 0x0)
+[00002084][CA9] [App - Handler] will Received msg: 0x1 msg_id: 0x0,msg_type:0x0; (Param1 = 0x4a / Param2 = 0x0)
+[00002673][CA9] Touchpanel ID=5663,Ver=0x81
+[00002884][CA9] [App - Connected] <LiveviewPostAction> REC_CONNECTED_CAM_VF_START
+[00002884][CA9] [App - Connected] <VfStart> AMBA Link not booted yet! Do nothing!
+[00002884][CA9] [App - Handler] <Entry> DEFAULT CASE: APP_ID: 1,0x10010001 msg_id: 0x2,msg_type:0x0; (Param1 = 0x0 / Param2 = 0x0)
+[00002884][CA9] [App - Connected] <OnMessage> Received msg: 0xB0010001, msg_id: 0x16,msg_type:0x0; (param1 = 0x0 / param2 = 0x0)
+[00002884][CA9] [App - Connected] <OnMessage> Received msg: 0xB0010001, msg_id: 0x16,msg_type:0x0; (param1 = 0x0 / param2 = 0x0)
+[00002884][CA9] [App - Handler] <Entry> DEFAULT CASE: APP_ID: 1,0xb0010001 msg_id: 0x16,msg_type:0x0; (Param1 = 0x0 / Param2 = 0x0)
+[00002884][CA9] [App - Connected] <OnMessage> Received msg: 0xB0010002, msg_id: 0x16,msg_type:0x0; (param1 = 0x0 / param2 = 0x0)
+[00002884][CA9] [App - Connected] <OnMessage> Received msg: 0xB0010002, msg_id: 0x16,msg_type:0x0; (param1 = 0x0 / param2 = 0x0)
+[00002884][CA9] [App - Handler] <Entry> DEFAULT CASE: APP_ID: 1,0xb0010002 msg_id: 0x16,msg_type:0x0; (Param1 = 0x0 / Param2 = 0x0)
+[00002884][CA9] [App - Handler] <Entry> HMSG_SD0_CARD_INSERT
+[00002884][CA9] [App - Connected] <OnMessage> Received msg: 0xE8030000, msg_id: 0x1d,msg_type:0x0; (param1 = 0x0 / param2 = 0x0)
+[00002884][CA9] [App - Connected] <OnMessage> Received msg: 0xE8030000, msg_id: 0x1d,msg_type:0x0; (param1 = 0x0 / param2 = 0x0)
+[00002884][CA9] [App - Handler] <Entry> DEFAULT CASE: APP_ID: 1,0xe8030000 msg_id: 0x1d,msg_type:0x0; (Param1 = 0x0 / Param2 = 0x0)
+[00002884][CA9] [App - Connected] <OnMessage> Received msg: 0xE0010800, msg_id: 0x1c,msg_type:0x0; (param1 = 0x0 / param2 = 0x8)
+[00002884][CA9] [App - Connected] <OnMessage> Received msg: 0xE0010800, msg_id: 0x1c,msg_type:0x0; (param1 = 0x0 / param2 = 0x8)
+[00002884][CA9] [App - Handler] <Entry> DEFAULT CASE: APP_ID: 1,0xe0010800 msg_id: 0x1c,msg_type:0x0; (Param1 = 0x0 / Param2 = 0x8)
+[00002899][CA9] Cid=27,77,BC2QT[0x42,0x43,0x32,0x51,0x54],48,1250582386,17,5
+[00002899][CA9] uhs=1,SupportSdxc=1,IsInit=1,FreqMaxUhs=100000000,InitLoop=0
+[00002899][CA9] speed=96000000 Hz
+[00002899][CA9] [AppLib - Card] <Insert> Insert drive C
+[00002917][CA9] thumbW 72, thumbP 128, thumbH 120, thumbN 30000
+[00002917][CA9] AppHashUtil_LoadThumbHashTable:93 fn C:\MISC\thumb.data
+[00002991][CA9] [App - Connected] <OnMessage> Received msg: 0x38010001, msg_id: 0x7,msg_type:0x0; (param1 = 0x43 / param2 = 0x0)
+[00002991][CA9] [App - Connected] <OnMessage> Received HMSG_STORAGE_BUSY
+[00003005][CA9] [Applib - DmfDateTime] <CreateHandler> sizeof rootname : 4
+[00003010][CA9] fail-----------no match!!!!
+[00003010][CA9] [App - Connected] <OnMessage> Received msg: 0x38010002, msg_id: 0x7,msg_type:0x0; (param1 = 0x43 / param2 = 0x0)
+[00003010][CA9] [App - Connected] <OnMessage> Received HMSG_STORAGE_IDLE
+[00003014][CA9] [AppLib - Card] <SetRoot> end: ReturnValue = 1086849025
+[00003041][CA9] force_fw.txt  fail !!!
+[00003041][CA9] open  firmware.bin  fail .............
+[00003041][CA9] ZYH================Cards[CardId].FlagsError: 0x0
+[00003041][CA9] [App - Connected] <CardCheckStatus> Card pass
+[00003041][CA9] app_fimi_status.sd_status :0
+[00003042][CA9] <universal_netcontrl_config_sd_error_type>error_type = 7,app_fimi_status.app_sd_status = 0
+[00003042][CA9] =================1080P/30
+[00003042][CA9] open  dvt.txt  fail .............
+[00003049][CA9] get_ptb_data str:
+[00003049][CA9] get_ptb_data cam_default char: N
+[00003074][CA9] [App - Connected] <OnMessage> Received msg: 0x98018003, msg_id: 0x13,msg_type:0x0; (param1 = 0x0 / param2 = 0x2)
+[00003074][CA9] [App - Handler] <Entry> DEFAULT CASE: APP_ID: 1,0x98018003 msg_id: 0x13,msg_type:0x0; (Param1 = 0x0 / Param2 = 0x2)
+[00003281][CA9] BossImplIpcInit
+[00003281][CA9] vring 1024 0xbd200000 0xbd204000 0xbd205000
+[00003281][CA9] vring 1024 0xbd20a000 0xbd20e000 0xbd20f000
+[00003282][CA9] AAA -- Net_Transparent register success.
+
+[00003290][CA9] Restore rpmsg info finish.
+[00003290][CA9] Done AmbaLink Setup
+[00003290][CA9] Hibernation image loaded!!
+[00003290][CA9] BossGuestTask: Boot Linux kernel
+[00003555][CA9] [AppLib - NetBase] <AmbaLink_ResumeDoneCallBack> Linux is Hibernation Boot and IPC is ready!
+[00003555][CA9] [AppLib - NetBase] <AmbaLink_ResumeDoneCallBack> AMBA_LINK_HIBER_TO_DISK done
+[00003555][CA9] >>> AppUtil_DC_Bootup : rval = 0 (PowerKey_Pressed=1, ticks=3555,adc=15, SysSoftReset = 0, GimbalConnected = 0 <<<
+[00003555][CA9] ---------LCD_ST7793SetBacklight[541]-----------
+[00003555][CA9] ---------longcheng---------[LCD_ST7793SetBacklight]<559>,EnableFlag = 1----------
+[00003557][CA9] [AppLib - Audio] <ReadDataFromRom> Filename = poweron_12k.pcm
+[00003557][CA9] [AppLib - Audio] <ReadDataFromRom> FileSize = 45600.
+[00003559][CA9] [AppLib - Audio] <ReadDataFromRom> ReturnValue = 45600
+[00003559][CA9] [AmpBeep_Beep][0363] Enter
+[00003559][CA9] [AmpBeep_Beep][0424] Beep decode start
+[00003565][CA9] [AmpBeep_Beep][0430] Beep decode end
+[00003576][CA9] [AmpAudioDec_OutputOpenStart][0284] 1
+[00003576][CA9] [AmpAudioDec_OutputOpenStart][0290] 2
+[00003576][CA9] [AmpAudioDec_OutputStart][0222] 1
+[00003576][CA9] [AmpAudioDec_OutputStart][0252] 2
+[00003576][CA9] [AmpAudioDec_OutputOpenStart][0296] 3
+[00003576][CA9] [AmpBeep_GetBSCallback][0148] Addr = 0xBA9363A0, Size = 0x00002000
+[00003576][CA9] [AmpBeep_GetBSCallback][0148] Addr = 0xBA9383A0, Size = 0x00002000
+[00003576][CA9] [AmpBeep_GetBSCallback][0148] Addr = 0xBA93A3A0, Size = 0x00002000
+[00003576][CA9] [AmpBeep_GetBSCallback][0148] Addr = 0xBA93C3A0, Size = 0x00002000
+[00003576][CA9] [AmpBeep_GetBSCallback][0148] Addr = 0xBA93E3A0, Size = 0x00002000
+[00003578][CA9] [AmpBeep_Beep][0450] Wait beep done
+[00003832][CA9] [AmpBeep_GetBSCallback][0148] Addr = 0xBA9403A0, Size = 0x00001220
+[00003884][CA9] ====== is_camera_block 309 : state=0x00000000, flags=0x00000000 ======
+[00005624][CA9] [AmpBeep_AudioOutputGetLofCB][0102] Abu = 0xB3B8D798, AbuCtrl = 0xB3B8D798
+[00005624][CA9] [AmpBeep_Beep][0455] Beep done
+[00005624][CA9] [AmpBeep_Stop][0318] Enter
+[00005624][CA9] [AmpAudioDec_OutputStop][0327] 1
+[00005624][CA9] [AmpAudioDec_OutputStop][0349] None using output. Stop output
+[00005630][CA9] [AmpAudioDec_OutputStop][0361] Audio output No ABU Op
+[00005657][CA9] [AmpAudioDec_OutputStop][0376] Audio output DMA stop
+[00005657][CA9] [AmpAudioDec_OutputStop][0382] 2 0
+[00007063][CA9]
+---- Can't do anti flicker detection ! ----
+
+[00008328][CA9] [AppLib - NetBase] <AmbaLink_NetEventNotifierCB> NET_EVENT_LINUX_NETWORK_READY
+[00008614][CA9] [AppLib - NetBase] <AmbaLink_NetEventNotifierCB> NET_EVENT_LINUX_BOOTED
+[00008614][CA9] >>> AppUtil_DC_Bootup : rval = 0 (PowerKey_Pressed=1, ticks=8614,adc=13, SysSoftReset = 0, GimbalConnected = 0 <<<
+[00008614][CA9] [App - Handler] <Entry> AMSG_EVENT_BOSS_BOOTED
+[00008614][CA9] SetParam:/usr/local/share/script/wifi_set_setting.sh AP_SSID MiCam_Vicky
+[00008614][CA9] SetParam:/usr/local/share/script/wifi_set_setting.sh AP_PASSWD 123456789
+[00008616][CA9] bt.txt file does not exist!
+[00008616][CA9] telnet.txt file exist... start telnet service!
+[00008616][CA9] NetCtrl framwork is initiated. inited = 1
+[00008618][CA9] binding failure warning: host = 0, prog = 536870917, vers = 1 ! Client needs to bind again next time!
+
+[00008618][CA9] binding failure warning: host = 0, prog = 536870919, vers = 1 ! Client needs to bind again next time!
+
+[00008619][CA9] JsonLib are initiated. inited = 1
+[00008619][CA9] binding failure warning: host = 0, prog = 536870918, vers = 1 ! Client needs to bind again next time!
+
+[00008620][CA9] binding failure warning: host = 0, prog = 536870916, vers = 1 ! Client needs to bind again next time!
+
+[00008620][CA9] [Applib - ExtendEnc] <_ExtendEnc_GetEnableStatus> Enable flag: 0
+[00008620][CA9] [Applib - Format] <DemuxerInit> DemuxerInitCfg.MaxPipe = 1, DemuxerInitCfg= 0x8578
+[00008620][CA9] [Applib - Format] <DemuxerInit> DemuxerInitCfg.MaxPipe = 1, DemuxerInitCfg= 0x8578
+[00008620][CA9] AmpDemuxer_InitImpl() : total 1 pipes are created!!
+[00008620][CA9] AmpDecTransPrint_Init 16 0xa114d530
+[00008620][CA9] AmpFifo_Create b2aea320 Base Base:       0 (0,0) NumEntries =      128 Q = 0xB2B31F80, QSize = 4096
+[00008620][CA9] AmpFifo_Create b2aea420 Base Base:       0 (0,0) NumEntries =      128 Q = 0xB2B32FC0, QSize = 4096
+[00008620][CA9] AmpFifo_Create b2aea520 Base Base:       0 (0,0) NumEntries =      128 Q = 0xB2B34020, QSize = 4096
+[00008621][CA9] AmpFifo_Create b2aea620 Base Base:       0 (0,0) NumEntries =      128 Q = 0xB2B35060, QSize = 4096
+[00008621][CA9] [Applib - TranscoderVideoDec] <Init> success
+[00008621][CA9] AmpFifo_Create b2aea720 Base Base:       0 (0,0) NumEntries =      512 Q = 0xB2B360A0, QSize = 16384
+[00008621][CA9] AmpFifo_Create b2aea820 Base Base:       0 (0,0) NumEntries =      512 Q = 0xB2B3A0E0, QSize = 16384
+[00008621][CA9] AmpFifo_Create b2aeb020 Virt Base:b2aea820 (0,0) NumEntries =       32 Q = 0xB2B3E140, QSize = 1024
+[00008621][CA9] [AppLib - TranscoderThmBasic] <IDRCodec_Init> IDRCodecFifoHdlr = b2aeb020
+[00008810][CA9] binding failure warning: host = 0, prog = 536870927, vers = 1 ! Client needs to bind again next time!
+
+[00008843][CA9] [App - Connected] <OnMessage> Received msg: 0xD8FF0001, msg_id: 0x1b,msg_type:0x0; (param1 = 0x0 / param2 = 0x0)
+[00008849][CA9] >>>>>> rec_connected_cam_boos_booted 5512: 0 <<<<<<
+[00008872][CA9] ================rec_connected_cam_check_distortion_correction_support 868: dewarp=1 res=0
+[00008873][CA9] >>>>>> rec_connected_cam_boos_booted 5522: 0 <<<<<<
+[00008873][CA9] [App - Connected] <OnMessage> Received msg: 0xF0FF0137, msg_id: 0x1e,msg_type:0x0; (param1 = 0x0 / param2 = 0x0)
+[00008874][CA9] [App - Sensor] <GetVinMode> Vin Mode = 1
+[00008874][CA9] [Applib - VideoEnc] <EncodeSetup> pri AverageBitrate = 40000000, MaxBitrate = 42000000, MinBitrate = 38000000
+[00008874][CA9] [Applib - VideoEnc] <EncodeSetup>  sec AverageBitrate = 3145728, MaxBitrate = 3303014, MinBitrate = 2988441
+[00008874][CA9] [EncMonitorTimer] UpdatePeriod as 1000ms
+[00008874][CA9] [Applib - VideoEnc] <EncodeSetup>  Pri AmbaEncMonitorAQP_RegisterService 0
+[00008874][CA9] [Applib - VideoEnc] <EncodeSetup>  Sec AmbaEncMonitorAQP_RegisterService 0
+[00008874][CA9] [Applib - VideoEnc] <CalBitsBufThreshold> Bits buffer threshold is 19 MByte
+[00008875][CA9] AmpFifo_Create b2aea920 Base Base:       0 (0,0) NumEntries =    10240 Q = 0xB2B3E580, QSize = 327680
+[00008885][CA9] AmpFifo_Create b2aeaa20 Base Base:       0 (0,0) NumEntries =    10240 Q = 0xB2B8E5C0, QSize = 327680
+[00008887][CA9] [Applib - VideoEnc] <EncodeSetup> H.264 Bits 0xb3bb2100 size 94371840 Desc 0xb95b2140 size 409600
+[00008897][CA9] Can not find svc for program 536870916
+
+[00008897][CA9] LU_NetFifo_Send_Control[114]: fail to do AmbaIPC_ClientCall(). 1
+[00008897][CA9] [App - Handler] <Entry> DEFAULT CASE: APP_ID: 1,0xf0ff0137 msg_id: 0x1e,msg_type:0x0; (Param1 = 0x0 / Param2 = 0x0)
+[00009300][CA9] EncMonitor Timer started
+[00010279][CA9] [AppLib - NetBase] <AmbaLink_NetEventNotifierCB> NET_EVENT_LINUX_NETWORK_OFF
+[00010698][CA9] [AppLib - NetControl] <RecvHandlerStatus> REMOTE_DATA_HANDLR_READY
+[00010809][CA9] [AppLib - NetControl] <RecvHandlerStatus> LNX_CMD_HANDLR_READY
+[00010831][CA9] [AppLib - NetControl] <RecvHandlerStatus> REMOTE_CMD_HANDLR_READY
+[00011042][CA9] [Applib - ExtendEnc] <_ExtendEnc_GetEnableStatus> Enable flag: 0
+[00011042][CA9] [Applib - ExtendEnc] <_ExtendEnc_GetEnableStatus> Enable flag: 0
+[00011042][CA9] [Applib - NetFifo] <GetStreamIDList> StreamItemList[0]: (live) active(1)
+[00011042][CA9] [Applib - NetFifo] <GetStreamIDList> StreamItemList[1]: (liveMain) active(0)
+[00011042][CA9] [Applib - NetFifo] <GetStreamIDList> StreamItemList[2]: (liveRear) active(0)
+[00011042][CA9] [Applib - NetFifo] <GetStreamIDList> StreamItemList[3]: (liveBoth) active(0)
+[00011056][CA9] AmpFifo_Create b2aeb120 Virt Base:b2aeaa20 (0,0) NumEntries =      256 Q = 0xB2BDE600, QSize = 8192
+[00011058][CA9] RT_NetFifo_ReportStatus_Svc: cbEvent(1) returns 0
+[00011063][CA9] [App - Connected] <OnMessage> Received msg: 0xD8200001, msg_id: 0x1b,msg_type:0x0; (param1 = 0x0 / param2 = 0x0)
+[00011063][CA9] [App - Connected] <NetFifoEventStart> AMSG_NETFIFO_EVENT_START
+[00011064][CA9] [App - Connected] <NetFifoEventStart> EncodeStart
+[00011064][CA9] [BRC] <Init> Bitrate monitor init, 1 40000000 0 1 11064
+[00011065][CA9] [AQP] <Init> AQP monitor init, 1
+[00011069][CA9] [BRC] <Init> Bitrate monitor init, 1 3145728 0 1 11069
+[00011070][CA9] [AQP] <Init> AQP monitor init, 1
+[00011077][CA9] [Applib - VideoEnc] <PipeCallback> Pipe[A11438CC] AMP_ENC_EVENT_STATE_CHANGED newState 2
+[00011077][CA9] =================1080P/30
+[00011077][CA9] [App - Handler] <Entry> DEFAULT CASE: APP_ID: 1,0xd8200001 msg_id: 0x1b,msg_type:0x0; (Param1 = 0x0 / Param2 = 0x0)
+[00011077][CA9] [App - Connected] <OnMessage> Received msg: 0x10020001, msg_id: 0x2,msg_type:0x0; (param1 = 0x0 / param2 = 0x0)
+[00011077][CA9] [App - Connected] <OnMessage> Received msg: 0x10020001, msg_id: 0x2,msg_type:0x0; (param1 = 0x0 / param2 = 0x0)
+[00011077][CA9] [App - Handler] <Entry> DEFAULT CASE: APP_ID: 1,0x10020001 msg_id: 0x2,msg_type:0x0; (Param1 = 0x0 / Param2 = 0x0)
+[00023202][CA9] >>>add_one_status_icon 1132<<< find one unsed position 0
+[00023202][CA9] >>>add icon<<< i=0 IconId=100 Used =1 X=326 Y=5
+[00023202][CA9] >>>add icon<<< i=1 IconId=103 Used =0 X=300 Y=5
+[00023202][CA9] >>>add icon<<< i=2 IconId=103 Used =0 X=274 Y=5
+[00023202][CA9] >>>add icon<<< IconId=100 i=0 X=326 Y=5
+[00023202][CA9] [AppLib - NetBase] <AmbaLink_NetEventNotifierCB> NET_EVENT_LINUX_NETWORK_READY
+[00023890][CA9] revert wifi blue led
