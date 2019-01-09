@@ -30,7 +30,7 @@ The only feasible option is using autoexec.ash scripts.
 In bootime, RTOS is able to execute all commands inside autoexec.ash file, in SD root. That commands, are not Linux commands, are Ambarella Shell commands, so is the only real/feasible option to execute some task, like custom scripts and some others tricks.
 
 Ambarella Shell Commands are very limmited in Mijia. Is impossible to list all of them, but this list are most important shell commands:
-(Note: ambash.sh is a custom tool, is not available in our system
+(Note: ambash.sh is a own custom tool, is not uploaded)
 
 #ambash.sh "help"
 supported built-in commands:
